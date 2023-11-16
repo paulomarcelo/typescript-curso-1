@@ -8,6 +8,6 @@ export class Negociacoes {
     }
 
     lista(): Array<Negociacao> {
-        return this.negociacoes;
+        return [...this.negociacoes]; // spread operator coloca cada elemento da lista negociacoes em uma nova lista
     }
 }
