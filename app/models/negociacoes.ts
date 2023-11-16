@@ -7,7 +7,7 @@ export class Negociacoes {
         this.negociacoes.push(negociacao);        
     }
 
-    lista(): Array<Negociacao> {
-        return [...this.negociacoes]; // spread operator coloca cada elemento da lista negociacoes em uma nova lista
+    lista(): ReadonlyArray<Negociacao> {
+        return this.negociacoes;
     }
 }
